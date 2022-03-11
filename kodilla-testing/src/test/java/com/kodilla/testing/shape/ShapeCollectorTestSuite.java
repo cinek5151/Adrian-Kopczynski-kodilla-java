@@ -1,5 +1,6 @@
 package com.kodilla.testing.shape;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -51,6 +52,9 @@ public class ShapeCollectorTestSuite
         Shape shapeResult = shapeCollector.getFigure(0);
         //Then
         assertEquals(shape, shapeResult);
+        Assert.assertEquals(null, shapeCollector.getFigure(1));
+        Assert.assertEquals(null, shapeCollector.getFigure(-1));
+
     }
 
     @DisplayName("Returns the names of all figures in the form of a String")
