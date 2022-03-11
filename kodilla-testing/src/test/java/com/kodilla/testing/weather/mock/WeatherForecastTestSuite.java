@@ -1,7 +1,7 @@
 package com.kodilla.testing.weather.mock;
 
-import com.kodilla.testing.weather.stub.Temperatures;
-import com.kodilla.testing.weather.stub.WeatherForecast;
+import com.kodilla.testing.weather.Temperatures;
+import com.kodilla.testing.weather.WeatherForecast;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
