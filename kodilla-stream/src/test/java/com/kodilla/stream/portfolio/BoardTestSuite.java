@@ -12,7 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class BoardTestSuite {
 
     @Test
-    void testAddTaskList() {
+    void testAddTaskList()
+    {
         //Given
         Board project = prepareTestData();
         //When
@@ -21,7 +22,8 @@ class BoardTestSuite {
         assertEquals(3, project.getTaskLists().size());
     }
 
-    private Board prepareTestData() {
+    private Board prepareTestData()
+    {
         //users
         User user1 = new User("developer1", "John Smith");
         User user2 = new User("projectmanager1", "Nina White");
@@ -87,7 +89,8 @@ class BoardTestSuite {
     }
 
     @Test
-    void testAddTaskListFindUsersTasks() {
+    void testAddTaskListFindUsersTasks()
+    {
         //Given
         Board project = prepareTestData();
 
@@ -105,7 +108,8 @@ class BoardTestSuite {
     }
 
     @Test
-    void testAddTaskListFindOutdatedTasks() {
+    void testAddTaskListFindOutdatedTasks()
+    {
         //Given
         Board project = prepareTestData();
 
@@ -125,7 +129,8 @@ class BoardTestSuite {
     }
 
     @Test
-    void testAddTaskListFindLongTasks() {
+    void testAddTaskListFindLongTasks()
+    {
         //Given
         Board project = prepareTestData();
 
@@ -144,7 +149,8 @@ class BoardTestSuite {
     }
 
     @Test
-    void testAddTaskListAverageWorkingOnTask() {
+    void testAddTaskListAverageWorkingOnTask()
+    {
         //Given
         Board project = prepareTestData();
         List<TaskList> inProgressTasks = new ArrayList<>();

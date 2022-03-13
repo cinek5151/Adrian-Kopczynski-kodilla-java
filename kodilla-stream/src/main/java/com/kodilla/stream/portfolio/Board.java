@@ -12,11 +12,13 @@ public final class Board {
         this.name = name;
     }
 
-    public void addTaskList(TaskList taskList) {
+    public void addTaskList(TaskList taskList)
+    {
         taskLists.add(taskList);
     }
 
     public boolean removeTaskList(TaskList taskList) {
+
         return taskLists.remove(taskList);
     }
 

@@ -9,7 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class BookTestSuite {
 
     @Test
-    void testGetListUsingFor() {
+    void testGetListUsingFor()
+    {
         //Given
         BookDirectory bookDirectory = new BookDirectory();
 
@@ -27,7 +28,8 @@ class BookTestSuite {
     }
 
     @Test
-    void testGetListUsingIntStream() {
+    void testGetListUsingIntStream()
+    {
         //Given
         BookDirectory bookDirectory = new BookDirectory();
 

@@ -8,11 +8,13 @@ public final class Continent
 {
     private final List<Country> countries = new ArrayList<>();
 
-    public void addCountry(Country country) {
+    public void addCountry(Country country)
+    {
         countries.add(country);
     }
 
-    public List<Country> getCountries() {
+    public List<Country> getCountries()
+    {
         return new ArrayList<>(countries);
     }
 

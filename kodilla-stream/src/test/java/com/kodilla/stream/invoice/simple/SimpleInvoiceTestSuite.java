@@ -7,7 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class SimpleInvoiceTestSuite {
 
     @Test
-    void testGetValueToPay() {
+    void testGetValueToPay()
+    {
         //Given
         SimpleInvoice invoice = new SimpleInvoice();
 
