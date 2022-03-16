@@ -1,9 +1,8 @@
 package com.kodilla.exception.test;
 
-public class RouteNotFoundExceptionHandling
-{
-    public void findFlight(Flight flight)
-    {
+public class RouteNotFoundExceptionHandling {
+
+    public void findFlight(Flight flight) {
 
         SearchFlights searcher = new SearchFlights();
         try {

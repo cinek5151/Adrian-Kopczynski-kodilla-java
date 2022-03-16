@@ -7,10 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
-public class FileReader
-{
-    public void readFile() throws FileReaderException
-    {
+public class FileReader {
+
+    public void readFile() throws FileReaderException {
+
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("names.txt").getFile());
 
@@ -24,8 +24,8 @@ public class FileReader
         }
     }
 
-    public void readFile(final String fileName) throws FileReaderException
-    {
+    public void readFile(final String fileName) throws FileReaderException {
+
         ClassLoader classLoader = getClass().getClassLoader();
 
         try (Stream<String> fileLines = Files.lines(Path.of(classLoader.getResource(fileName).toURI()))) {

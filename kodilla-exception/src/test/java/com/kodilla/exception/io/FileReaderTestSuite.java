@@ -4,11 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FileReaderTestSuite
-{
+public class FileReaderTestSuite {
+
     @Test
-    void testReadFile()
-    {
+    void testReadFile() {
         // given
         FileReader fileReader = new FileReader();
         // when & then
@@ -16,8 +15,8 @@ public class FileReaderTestSuite
     }
 
     @Test
-    void whenFileDosentExistsReadFileShouldThrowException()
-    {
+    void whenFileDosentExistsReadFileShouldThrowException() {
+
         // given
         FileReader fileReader = new FileReader();
         String fileName = "nie_ma_takiego_pliku.txt";
@@ -26,8 +25,8 @@ public class FileReaderTestSuite
     }
 
     @Test
-    public void testReadFileWithName()
-    {
+    public void testReadFileWithName() {
+
         // given
         FileReader fileReader = new FileReader();
         // when & then

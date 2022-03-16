@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class SecondChallengeTestSuite
-{
+public class SecondChallengeTestSuite {
+
     @Test
-    void testProbablyIWillThrowException()
-    {
+    void testProbablyIWillThrowException() {
+
         // Given
         SecondChallenge challenge = new SecondChallenge();
 
@@ -19,8 +19,8 @@ public class SecondChallengeTestSuite
     }
 
     @Test
-    void testIWillThrowException()
-    {
+    void testIWillThrowException() {
+
         // Given
         SecondChallenge challenge = new SecondChallenge();
 
